@@ -1,7 +1,7 @@
 
 async function playVideo() {
   const link = document.getElementById("linkInput").value;
-  const res = await fetch(`https://tera-back-end.onrender.com/api/extract?url=${encodeURIComponent(link)}`);
+  const res = await fetch(`https://teraa-back-end.onrender.com/api/extract?url=${encodeURIComponent(link)}`);
   const data = await res.json();
   if (data.videoUrl) {
     const video = document.getElementById("videoPlayer");
